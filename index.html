@@ -1,14 +1,17 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
   <meta name="theme-color" content="#ffffff">
-  <meta name="description" content="Dhanush S — Software Engineer at EY GDS and builder of PromptImageLab.com. Working on AI agents, ServiceNow automation, LangChain, Python, and React.">
+  <meta name="description"
+    content="Dhanush S — Software Engineer at EY GDS and builder of PromptImageLab.com. Working on AI agents, ServiceNow automation, LangChain, Python, and React.">
   <meta name="author" content="Dhanush S">
   <meta property="og:title" content="Dhanush S — Software Engineer">
-  <meta property="og:description" content="Software Engineer at EY GDS building AI agents and enterprise incident tools, plus independent web and mobile products.">
+  <meta property="og:description"
+    content="Software Engineer at EY GDS building AI agents and enterprise incident tools, plus independent web and mobile products.">
   <meta property="og:type" content="website">
   <title>Dhanush S — Software Engineer</title>
 
@@ -113,8 +116,14 @@
       --shadow: 0 18px 60px rgba(0, 0, 0, 0.30);
     }
 
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
       background: var(--bg);
@@ -125,219 +134,714 @@
       text-rendering: optimizeLegibility;
     }
 
-    a { color: inherit; text-decoration: none; }
-    a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
-    .skip { position: absolute; left: -9999px; }
-    .skip:focus { left: 16px; top: 16px; z-index: 99; background: var(--surface); padding: 10px 14px; border-radius: 8px; }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
 
-    .shell { width: min(calc(100% - 40px), var(--max)); margin: auto; }
+    a:focus-visible,
+    button:focus-visible {
+      outline: 3px solid var(--accent);
+      outline-offset: 3px;
+    }
+
+    .skip {
+      position: absolute;
+      left: -9999px;
+    }
+
+    .skip:focus {
+      left: 16px;
+      top: 16px;
+      z-index: 99;
+      background: var(--surface);
+      padding: 10px 14px;
+      border-radius: 8px;
+    }
+
+    .shell {
+      width: min(calc(100% - 40px), var(--max));
+      margin: auto;
+    }
+
     header {
-      position: sticky; top: 0; z-index: 50;
+      position: sticky;
+      top: 0;
+      z-index: 50;
       background: color-mix(in srgb, var(--bg) 88%, transparent);
       backdrop-filter: blur(18px);
       border-bottom: 1px solid color-mix(in srgb, var(--line) 80%, transparent);
       box-shadow: 0 4px 16px rgba(15, 23, 42, 0.03);
     }
-    .nav { min-height: 68px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
-    .brand { font-weight: 750; letter-spacing: -.02em; font-size: 16.5px; }
-    .brand span { color: var(--muted); font-weight: 500; font-size: 13.5px; margin-left: 6px; }
-    nav { display: flex; gap: 22px; align-items: center; }
-    nav a { font-size: 14px; color: var(--muted); transition: color .2s ease; font-weight: 500; }
-    nav a:hover { color: var(--text); }
-    .actions { display: flex; align-items: center; gap: 8px; }
-    .icon-btn {
-      width: 38px; height: 38px; border: 1px solid var(--line); background: var(--surface);
-      color: var(--text); border-radius: 10px; cursor: pointer; display: grid; place-items: center;
-      transition: .2s ease;
-    }
-    .icon-btn svg { width: 17px; height: 17px; }
-    .icon-btn:hover { box-shadow: var(--shadow-sm); transform: translateY(-1px); }
 
-    main { overflow: hidden; }
-    .hero { padding: 90px 0 76px; }
-    .eyebrow {
-      display: inline-flex; align-items: center; gap: 8px;
-      font-size: 13px; font-weight: 700; color: var(--accent);
-      letter-spacing: .08em; text-transform: uppercase;
+    .nav {
+      min-height: 68px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
     }
-    .eyebrow::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: #10b981; display: inline-block; }
-    h1 {
-      max-width: 900px; margin: 18px 0 20px;
-      font-size: clamp(38px, 5.8vw, 68px); line-height: 1.05; letter-spacing: -.045em;
-      font-weight: 800;
+
+    .brand {
+      font-weight: 750;
+      letter-spacing: -.02em;
+      font-size: 16.5px;
     }
-    .hero p {
-      max-width: 740px; margin: 0; color: var(--muted);
-      font-size: clamp(17px, 1.8vw, 19.5px); line-height: 1.6;
+
+    .brand span {
+      color: var(--muted);
+      font-weight: 500;
+      font-size: 13.5px;
+      margin-left: 6px;
     }
-    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
-    .btn {
-      display: inline-flex; align-items: center; justify-content: center; gap: 8px;
-      min-height: 44px; padding: 0 18px; border-radius: 10px; border: 1px solid var(--line);
-      background: var(--surface); font-weight: 650; font-size: 14px; transition: .2s ease;
+
+    nav {
+      display: flex;
+      gap: 22px;
+      align-items: center;
+    }
+
+    nav a {
+      font-size: 14px;
+      color: var(--muted);
+      transition: color .2s ease;
+      font-weight: 500;
+    }
+
+    nav a:hover {
       color: var(--text);
     }
+
+    .actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .icon-btn {
+      width: 38px;
+      height: 38px;
+      border: 1px solid var(--line);
+      background: var(--surface);
+      color: var(--text);
+      border-radius: 10px;
+      cursor: pointer;
+      display: grid;
+      place-items: center;
+      transition: .2s ease;
+    }
+
+    .icon-btn svg {
+      width: 17px;
+      height: 17px;
+    }
+
+    .icon-btn:hover {
+      box-shadow: var(--shadow-sm);
+      transform: translateY(-1px);
+    }
+
+    main {
+      overflow: hidden;
+    }
+
+    .hero {
+      padding: 90px 0 76px;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--accent);
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 900px;
+      margin: 18px 0 20px;
+      font-size: clamp(38px, 5.8vw, 68px);
+      line-height: 1.05;
+      letter-spacing: -.045em;
+      font-weight: 800;
+    }
+
+    .hero p {
+      max-width: 740px;
+      margin: 0;
+      color: var(--muted);
+      font-size: clamp(17px, 1.8vw, 19.5px);
+      line-height: 1.6;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 32px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 44px;
+      padding: 0 18px;
+      border-radius: 10px;
+      border: 1px solid var(--line);
+      background: var(--surface);
+      font-weight: 650;
+      font-size: 14px;
+      transition: .2s ease;
+      color: var(--text);
+    }
+
     .btn:hover {
       transform: translateY(-1px);
       border-color: var(--faint);
       box-shadow: var(--shadow-sm);
     }
+
     .btn.primary {
-      background: var(--text); color: var(--bg); border-color: var(--text);
+      background: var(--text);
+      color: var(--bg);
+      border-color: var(--text);
       box-shadow: 0 4px 14px rgba(15, 23, 42, 0.12);
     }
-    .btn svg { width: 15px; height: 15px; }
+
+    .btn svg {
+      width: 15px;
+      height: 15px;
+    }
 
     .proof {
-      display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px;
-      margin-top: 56px; border: 1px solid var(--line); border-radius: var(--radius);
-      overflow: hidden; background: var(--line); box-shadow: var(--shadow-sm);
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      margin-top: 56px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      overflow: hidden;
+      background: var(--line);
+      box-shadow: var(--shadow-sm);
     }
-    .proof-item { background: var(--surface); padding: 20px; }
-    .proof-value { font-size: 20px; font-weight: 800; letter-spacing: -.03em; color: var(--text); }
-    .proof-label { color: var(--muted); font-size: 13px; margin-top: 3px; }
 
-    section { padding: 76px 0; border-top: 1px solid var(--line); }
-    .section-head { display: grid; grid-template-columns: 240px 1fr; gap: 40px; margin-bottom: 38px; }
-    .section-kicker { color: var(--accent); font-size: 12px; text-transform: uppercase; letter-spacing: .12em; font-weight: 750; }
-    .section-title { margin: 0; font-size: clamp(26px, 3.4vw, 38px); line-height: 1.12; letter-spacing: -.04em; font-weight: 750; }
-    .section-intro { margin: 10px 0 0; color: var(--muted); max-width: 680px; font-size: 15.5px; }
+    .proof-item {
+      background: var(--surface);
+      padding: 20px;
+    }
 
-    .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+    .proof-value {
+      font-size: 20px;
+      font-weight: 800;
+      letter-spacing: -.03em;
+      color: var(--text);
+    }
+
+    .proof-label {
+      color: var(--muted);
+      font-size: 13px;
+      margin-top: 3px;
+    }
+
+    section {
+      padding: 76px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .section-head {
+      display: grid;
+      grid-template-columns: 240px 1fr;
+      gap: 40px;
+      margin-bottom: 38px;
+    }
+
+    .section-kicker {
+      color: var(--accent);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      font-weight: 750;
+    }
+
+    .section-title {
+      margin: 0;
+      font-size: clamp(26px, 3.4vw, 38px);
+      line-height: 1.12;
+      letter-spacing: -.04em;
+      font-weight: 750;
+    }
+
+    .section-intro {
+      margin: 10px 0 0;
+      color: var(--muted);
+      max-width: 680px;
+      font-size: 15.5px;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
     .card {
-      background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
-      padding: 26px; box-shadow: var(--shadow-sm);
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 26px;
+      box-shadow: var(--shadow-sm);
       transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
     }
+
     .card:hover {
       transform: translateY(-2px);
       box-shadow: var(--shadow-md);
       border-color: color-mix(in srgb, var(--line) 60%, var(--accent));
     }
-    .card h3 { margin: 0 0 8px; font-size: 18px; letter-spacing: -.02em; }
-    .card p { color: var(--muted); margin: 0; font-size: 14.5px; line-height: 1.65; }
-    .tags { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 18px; }
+
+    .card h3 {
+      margin: 0 0 8px;
+      font-size: 18px;
+      letter-spacing: -.02em;
+    }
+
+    .card p {
+      color: var(--muted);
+      margin: 0;
+      font-size: 14.5px;
+      line-height: 1.65;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin-top: 18px;
+    }
+
     .tag {
-      display: inline-flex; padding: 4px 9px; border-radius: 6px; background: var(--tag-bg);
-      border: 1px solid var(--line); color: var(--muted); font-size: 12px; font-weight: 550;
+      display: inline-flex;
+      padding: 4px 9px;
+      border-radius: 6px;
+      background: var(--tag-bg);
+      border: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 550;
     }
 
-    .experience { display: flex; flex-direction: column; }
-    .role { display: grid; grid-template-columns: 240px 1fr; gap: 40px; padding: 32px 0; }
-    .role + .role { border-top: 1px solid var(--line); }
-    .role-meta { color: var(--muted); font-size: 14px; }
-    .role-company { color: var(--text); font-weight: 750; font-size: 17px; margin-bottom: 2px; }
+    .experience {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .role {
+      display: grid;
+      grid-template-columns: 240px 1fr;
+      gap: 40px;
+      padding: 32px 0;
+    }
+
+    .role+.role {
+      border-top: 1px solid var(--line);
+    }
+
+    .role-meta {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .role-company {
+      color: var(--text);
+      font-weight: 750;
+      font-size: 17px;
+      margin-bottom: 2px;
+    }
+
     .role-badge {
-      display: inline-block; font-size: 11px; font-weight: 700; text-transform: uppercase;
-      letter-spacing: .06em; color: var(--accent); background: var(--accent-soft);
-      padding: 3px 8px; border-radius: 6px; margin: 6px 0;
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      color: var(--accent);
+      background: var(--accent-soft);
+      padding: 3px 8px;
+      border-radius: 6px;
+      margin: 6px 0;
     }
-    .role-dates { font-weight: 500; color: var(--muted); font-size: 13px; }
-    .role-loc { color: var(--faint); font-size: 13px; margin-top: 2px; }
-    .role-content h3 { margin: 0 0 10px; font-size: 20px; letter-spacing: -.025em; }
-    .role-content ul { margin: 0; padding-left: 18px; color: var(--muted); }
-    .role-content li { margin: 9px 0; font-size: 14.5px; line-height: 1.65; }
-    .role-content li::marker { color: var(--accent); }
 
-    .projects-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+    .role-dates {
+      font-weight: 500;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .role-loc {
+      color: var(--faint);
+      font-size: 13px;
+      margin-top: 2px;
+    }
+
+    .role-content h3 {
+      margin: 0 0 10px;
+      font-size: 20px;
+      letter-spacing: -.025em;
+    }
+
+    .role-content ul {
+      margin: 0;
+      padding-left: 18px;
+      color: var(--muted);
+    }
+
+    .role-content li {
+      margin: 9px 0;
+      font-size: 14.5px;
+      line-height: 1.65;
+    }
+
+    .role-content li::marker {
+      color: var(--accent);
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
     .project-card {
-      background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
-      padding: 28px; box-shadow: var(--shadow-sm); display: flex; flex-direction: column; justify-content: space-between;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 28px;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
     }
+
     .project-card:hover {
       transform: translateY(-2px);
       box-shadow: var(--shadow-md);
       border-color: color-mix(in srgb, var(--line) 60%, var(--accent));
     }
-    .project-badge {
-      font-size: 11px; font-weight: 750; text-transform: uppercase; letter-spacing: .08em;
-      color: var(--accent); margin-bottom: 8px;
-    }
-    .project-card h3 { margin: 0 0 8px; font-size: 19px; letter-spacing: -.025em; }
-    .project-card p { color: var(--muted); margin: 0; font-size: 14px; line-height: 1.65; flex-grow: 1; }
 
-    .skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+    .project-badge {
+      font-size: 11px;
+      font-weight: 750;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      color: var(--accent);
+      margin-bottom: 8px;
+    }
+
+    .project-card h3 {
+      margin: 0 0 8px;
+      font-size: 19px;
+      letter-spacing: -.025em;
+    }
+
+    .project-card p {
+      color: var(--muted);
+      margin: 0;
+      font-size: 14px;
+      line-height: 1.65;
+      flex-grow: 1;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+
     .skill-card {
-      background: var(--surface); border: 1px solid var(--line); border-radius: 12px;
-      padding: 20px; box-shadow: var(--shadow-sm);
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: var(--shadow-sm);
       transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
     }
+
     .skill-card:hover {
       transform: translateY(-2px);
       box-shadow: var(--shadow-md);
       border-color: color-mix(in srgb, var(--line) 70%, var(--accent));
     }
-    .skill-card strong { display: block; margin-bottom: 8px; font-size: 14.5px; color: var(--text); }
-    .skill-card span { color: var(--muted); font-size: 13px; line-height: 1.65; display: block; }
 
-    .timeline { display: grid; gap: 0; }
-    .edu-item { display: grid; grid-template-columns: 240px 1fr; gap: 40px; padding: 22px 0; border-top: 1px solid var(--line); }
-    .edu-item:first-child { border-top: 0; }
-    .edu-meta { color: var(--muted); font-size: 13.5px; }
-    .edu-item h3 { margin: 0; font-size: 17px; font-weight: 700; }
-    .edu-item p { margin: 3px 0 0; color: var(--muted); font-size: 14px; }
+    .skill-card strong {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 14.5px;
+      color: var(--text);
+    }
 
-    .achievement-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+    .skill-card span {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.65;
+      display: block;
+    }
+
+    .timeline {
+      display: grid;
+      gap: 0;
+    }
+
+    .edu-item {
+      display: grid;
+      grid-template-columns: 240px 1fr;
+      gap: 40px;
+      padding: 22px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .edu-item:first-child {
+      border-top: 0;
+    }
+
+    .edu-meta {
+      color: var(--muted);
+      font-size: 13.5px;
+    }
+
+    .edu-item h3 {
+      margin: 0;
+      font-size: 17px;
+      font-weight: 700;
+    }
+
+    .edu-item p {
+      margin: 3px 0 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .achievement-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+    }
+
     .achievement {
-      background: var(--surface); border: 1px solid var(--line); border-radius: 14px;
-      padding: 22px; box-shadow: var(--shadow-sm);
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 22px;
+      box-shadow: var(--shadow-sm);
       transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
     }
+
     .achievement:hover {
       transform: translateY(-2px);
       box-shadow: var(--shadow-md);
       border-color: color-mix(in srgb, var(--line) 70%, var(--accent));
     }
+
     .achievement-top {
-      display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
     }
-    .achievement-index { font-size: 11px; font-weight: 800; letter-spacing: .12em; color: var(--faint); }
-    .achievement-type { font-size: 11px; text-transform: uppercase; letter-spacing: .08em; font-weight: 750; color: var(--accent); }
-    .achievement h3 { margin: 0 0 6px; font-size: 16.5px; letter-spacing: -.02em; }
-    .achievement p { margin: 0; color: var(--muted); font-size: 13.5px; line-height: 1.65; }
+
+    .achievement-index {
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .12em;
+      color: var(--faint);
+    }
+
+    .achievement-type {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      font-weight: 750;
+      color: var(--accent);
+    }
+
+    .achievement h3 {
+      margin: 0 0 6px;
+      font-size: 16.5px;
+      letter-spacing: -.02em;
+    }
+
+    .achievement p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 13.5px;
+      line-height: 1.65;
+    }
 
     .contact {
-      background: var(--text); color: var(--bg); border-radius: 20px; padding: 46px;
-      display: flex; align-items: center; justify-content: space-between; gap: 32px;
+      background: var(--text);
+      color: var(--bg);
+      border-radius: 20px;
+      padding: 46px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 32px;
       box-shadow: var(--shadow-lg);
     }
-    .contact h2 { margin: 0; font-size: clamp(28px, 3.8vw, 42px); letter-spacing: -.04em; line-height: 1.1; }
-    .contact p { color: color-mix(in srgb, var(--bg) 65%, transparent); margin: 8px 0 0; font-size: 15.5px; }
-    .contact-actions { display: flex; gap: 10px; flex-wrap: wrap; }
-    .contact .btn { background: var(--bg); color: var(--text); border-color: var(--bg); white-space: nowrap; font-weight: 700; }
-    .contact .btn:hover { background: color-mix(in srgb, var(--bg) 90%, transparent); }
+
+    .contact h2 {
+      margin: 0;
+      font-size: clamp(28px, 3.8vw, 42px);
+      letter-spacing: -.04em;
+      line-height: 1.1;
+    }
+
+    .contact p {
+      color: color-mix(in srgb, var(--bg) 65%, transparent);
+      margin: 8px 0 0;
+      font-size: 15.5px;
+    }
+
+    .contact-actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .contact .btn {
+      background: var(--bg);
+      color: var(--text);
+      border-color: var(--bg);
+      white-space: nowrap;
+      font-weight: 700;
+    }
+
+    .contact .btn:hover {
+      background: color-mix(in srgb, var(--bg) 90%, transparent);
+    }
 
     footer {
-      padding: 28px 0 42px; color: var(--faint); font-size: 13px;
-      display: flex; justify-content: space-between; gap: 20px; align-items: center;
+      padding: 28px 0 42px;
+      color: var(--faint);
+      font-size: 13px;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      align-items: center;
     }
-    .footer-links { display: flex; gap: 16px; }
-    .footer-links a:hover { color: var(--text); }
+
+    .footer-links {
+      display: flex;
+      gap: 16px;
+    }
+
+    .footer-links a:hover {
+      color: var(--text);
+    }
 
     @media (max-width: 860px) {
-      .shell { width: min(calc(100% - 28px), var(--max)); }
-      nav { display: none; }
-      .hero { padding: 68px 0 52px; }
-      .proof { grid-template-columns: repeat(2, 1fr); margin-top: 40px; }
-      section { padding: 56px 0; }
-      .section-head { grid-template-columns: 1fr; gap: 8px; margin-bottom: 26px; }
-      .grid-2, .skills-grid, .projects-grid, .achievement-grid { grid-template-columns: 1fr; }
-      .role, .edu-item { grid-template-columns: 1fr; gap: 8px; }
-      .contact { padding: 32px 22px; flex-direction: column; align-items: flex-start; }
+      .shell {
+        width: min(calc(100% - 28px), var(--max));
+      }
+
+      nav {
+        display: none;
+      }
+
+      .hero {
+        padding: 68px 0 52px;
+      }
+
+      .proof {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 40px;
+      }
+
+      section {
+        padding: 56px 0;
+      }
+
+      .section-head {
+        grid-template-columns: 1fr;
+        gap: 8px;
+        margin-bottom: 26px;
+      }
+
+      .grid-2,
+      .skills-grid,
+      .projects-grid,
+      .achievement-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .role,
+      .edu-item {
+        grid-template-columns: 1fr;
+        gap: 8px;
+      }
+
+      .contact {
+        padding: 32px 22px;
+        flex-direction: column;
+        align-items: flex-start;
+      }
     }
+
     @media (max-width: 520px) {
-      .proof { grid-template-columns: 1fr; }
-      h1 { font-size: 34px; }
-      .hero-actions .btn { width: 100%; }
-      .card, .project-card { padding: 20px; }
-      footer { flex-direction: column; align-items: flex-start; gap: 12px; }
+      .proof {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 34px;
+      }
+
+      .hero-actions .btn {
+        width: 100%;
+      }
+
+      .card,
+      .project-card {
+        padding: 20px;
+      }
+
+      footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+      }
     }
+
     @media print {
-      header, .hero-actions, .theme-control, footer { display: none !important; }
-      body, section { background: #fff !important; color: #111 !important; }
-      .hero { padding: 20px 0; }
-      .card, .project-card, .skill-card, .achievement { box-shadow: none; break-inside: avoid; }
+
+      header,
+      .hero-actions,
+      .theme-control,
+      footer {
+        display: none !important;
+      }
+
+      body,
+      section {
+        background: #fff !important;
+        color: #111 !important;
+      }
+
+      .hero {
+        padding: 20px 0;
+      }
+
+      .card,
+      .project-card,
+      .skill-card,
+      .achievement {
+        box-shadow: none;
+        break-inside: avoid;
+      }
     }
   </style>
 </head>
@@ -358,10 +862,12 @@
         <a href="#contact">Contact</a>
       </nav>
       <div class="actions">
-        <button class="icon-btn theme-control" id="themeToggle" type="button" aria-label="Toggle theme" title="Toggle theme">
+        <button class="icon-btn theme-control" id="themeToggle" type="button" aria-label="Toggle theme"
+          title="Toggle theme">
           <svg id="themeIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
             <circle cx="12" cy="12" r="4" />
-            <path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41m11.32-11.32 1.41-1.41" />
+            <path
+              d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41m11.32-11.32 1.41-1.41" />
           </svg>
         </button>
       </div>
@@ -373,11 +879,13 @@
 
       <!-- Hero Section -->
       <section class="hero" aria-labelledby="hero-title" style="border-top:0">
-        <div class="eyebrow">Software Engineer · Builder</div>
+        <div class="eyebrow">Software Engineer</div>
         <h1 id="hero-title">I build AI-driven enterprise tools and ship software people actually use.</h1>
         <p>
-          I'm a software engineer at EY GDS building AI agents and automated incident intelligence workflows with ServiceNow,
-          LangChain, RAG, and Python. When I'm not writing enterprise software, I build and run PromptImageLab.com and ship full-stack web and mobile apps.
+          I'm a software engineer at EY GDS building AI agents and automated incident intelligence workflows with
+          ServiceNow,
+          LangChain, RAG, and Python. When I'm not writing enterprise software, I build and run PromptImageLab.com and
+          ship full-stack web and mobile apps.
         </p>
         <div class="hero-actions">
           <a class="btn primary" href="#experience">See my experience
@@ -417,7 +925,9 @@
           <div>
             <h2 class="section-title" id="about-title">Practical engineering, clean code, no fluff.</h2>
             <p class="section-intro">
-              I like building software that solves concrete problems. At EY GDS, that means building AI agents that dig through incident history to help engineers troubleshoot faster. On my own time, I take product ideas from an empty repo all the way to production.
+              I like building software that solves concrete problems. At EY GDS, that means building AI agents that dig
+              through incident history to help engineers troubleshoot faster. On my own time, I take product ideas from
+              an empty repo all the way to production.
             </p>
           </div>
         </div>
@@ -425,7 +935,8 @@
           <article class="card">
             <h3>What I focus on</h3>
             <p>
-              AI agent workflows, retrieval-augmented generation (RAG) on enterprise data, REST API integrations, responsive React interfaces, and reliable Python data utilities.
+              AI agent workflows, retrieval-augmented generation (RAG) on enterprise data, REST API integrations,
+              responsive React interfaces, and reliable Python data utilities.
             </p>
             <div class="tags">
               <span class="tag">AI Agents</span>
@@ -438,7 +949,8 @@
           <article class="card">
             <h3>My day-to-day approach</h3>
             <p>
-              I keep things maintainable: understand the real requirement first, write clean code, trace down tricky edge cases with root-cause debugging, and make sure what goes live actually stays up.
+              I keep things maintainable: understand the real requirement first, write clean code, trace down tricky
+              edge cases with root-cause debugging, and make sure what goes live actually stays up.
             </p>
             <div class="tags">
               <span class="tag">Root-Cause Debugging</span>
@@ -474,10 +986,15 @@
             <div class="role-content">
               <h3>Enterprise AI & ITSM Automation</h3>
               <ul>
-                <li>Build AI-driven incident analysis and resolution workflows using Azure AI Foundry, ServiceNow AI Agent Studio, LangChain, and Python.</li>
-                <li>Connect AI agents directly with ServiceNow ITSM via REST APIs to pull past incident logs and internal knowledge bases, giving support engineers contextual resolution suggestions in real time.</li>
-                <li>Write, test, debug, and maintain software components based on day-to-day operational and business requirements.</li>
-                <li>Track down tricky integration and workflow bugs between ServiceNow, external APIs, and AI agent steps through root-cause analysis and hands-on troubleshooting.</li>
+                <li>Build AI-driven incident analysis and resolution workflows using Azure AI Foundry, ServiceNow AI
+                  Agent Studio, LangChain, and Python.</li>
+                <li>Connect AI agents directly with ServiceNow ITSM via REST APIs to pull past incident logs and
+                  internal knowledge bases, giving support engineers contextual resolution suggestions in real time.
+                </li>
+                <li>Write, test, debug, and maintain software components based on day-to-day operational and business
+                  requirements.</li>
+                <li>Track down tricky integration and workflow bugs between ServiceNow, external APIs, and AI agent
+                  steps through root-cause analysis and hands-on troubleshooting.</li>
               </ul>
               <div class="tags">
                 <span class="tag">Azure AI Foundry</span>
@@ -504,9 +1021,12 @@
             <div class="role-content">
               <h3>Founder & Full-Stack AI Product Developer</h3>
               <ul>
-                <li>Founded and built <strong>PromptImageLab.com</strong> from scratch—a live web platform that gives creators and developers practical AI tools, tutorials, and productivity helpers.</li>
-                <li>Built the full stack myself: designed and coded the React frontend, created backend services in Python, and integrated modern generative AI APIs.</li>
-                <li>Ship continuous improvements and utilities based on direct user usage, keeping the platform fast, responsive, and easy to use.</li>
+                <li>Founded and built <strong>PromptImageLab.com</strong> from scratch—a live web platform that gives
+                  creators and developers practical AI tools, tutorials, and productivity helpers.</li>
+                <li>Built the full stack myself: designed and coded the React frontend, created backend services in
+                  Python, and integrated modern generative AI APIs.</li>
+                <li>Ship continuous improvements and utilities based on direct user usage, keeping the platform fast,
+                  responsive, and easy to use.</li>
               </ul>
               <div class="tags">
                 <span class="tag">PromptImageLab.com</span>
@@ -531,10 +1051,14 @@
             <div class="role-content">
               <h3>Mobile, Web & Automation Projects</h3>
               <ul>
-                <li>Built and published a network-marketing mobile application on the <strong>Google Play Store</strong> using React, JavaScript, HTML, CSS, and database storage.</li>
-                <li>Developed a database-backed food-ordering web application with full product catalogs, interactive menus, cart sessions, and order management.</li>
-                <li>Created an Amazon price intelligence tool in Python that scrapes product listings, tracks price shifts, triggers automated alerts, and plots trends on a dashboard.</li>
-                <li>Built a custom Windows desktop app for a client with embedded AI functionality tailored to their specific operational needs.</li>
+                <li>Built and published a network-marketing mobile application on the <strong>Google Play Store</strong>
+                  using React, JavaScript, HTML, CSS, and database storage.</li>
+                <li>Developed a database-backed food-ordering web application with full product catalogs, interactive
+                  menus, cart sessions, and order management.</li>
+                <li>Created an Amazon price intelligence tool in Python that scrapes product listings, tracks price
+                  shifts, triggers automated alerts, and plots trends on a dashboard.</li>
+                <li>Built a custom Windows desktop app for a client with embedded AI functionality tailored to their
+                  specific operational needs.</li>
               </ul>
               <div class="tags">
                 <span class="tag">Google Play Store</span>
@@ -566,7 +1090,9 @@
               <div class="project-badge">Enterprise AI & ITSM</div>
               <h3>Enterprise Incident Intelligence Agent</h3>
               <p>
-                An AI workflow built at EY GDS connecting ServiceNow ITSM with Azure AI Foundry and LangChain. When support tickets arrive, the agent runs a RAG pipeline over historical incident data and documentation to suggest likely root causes and proven fixes on the fly.
+                An AI workflow built at EY GDS connecting ServiceNow ITSM with Azure AI Foundry and LangChain. When
+                support tickets arrive, the agent runs a RAG pipeline over historical incident data and documentation to
+                suggest likely root causes and proven fixes on the fly.
               </p>
             </div>
             <div class="tags">
@@ -585,7 +1111,9 @@
               <div class="project-badge">Live Platform · Founder</div>
               <h3>PromptImageLab.com</h3>
               <p>
-                An independent web platform I built to give creators and developers accessible AI utilities, learning materials, and productivity tools. Built with a React frontend, Python backend, and integrated generative AI APIs.
+                An independent web platform I built to give creators and developers accessible AI utilities, learning
+                materials, and productivity tools. Built with a React frontend, Python backend, and integrated
+                generative AI APIs.
               </p>
             </div>
             <div class="tags">
@@ -604,7 +1132,9 @@
               <div class="project-badge">Python & Web Scraping</div>
               <h3>Amazon Product Price Tracker & Alerts</h3>
               <p>
-                A Python-based intelligence service that scrapes Amazon listings, normalizes pricing data, and tracks changes over time. Includes configurable price-drop alerts and a clean visual dashboard to spot discount trends.
+                A Python-based intelligence service that scrapes Amazon listings, normalizes pricing data, and tracks
+                changes over time. Includes configurable price-drop alerts and a clean visual dashboard to spot discount
+                trends.
               </p>
             </div>
             <div class="tags">
@@ -622,7 +1152,8 @@
               <div class="project-badge">Mobile · Play Store</div>
               <h3>Network Marketing Mobile App</h3>
               <p>
-                A full mobile app built with React and JavaScript and shipped directly to the Google Play Store. Handles team networks, member trees, commission calculations, and database-backed record keeping.
+                A full mobile app built with React and JavaScript and shipped directly to the Google Play Store. Handles
+                team networks, member trees, commission calculations, and database-backed record keeping.
               </p>
             </div>
             <div class="tags">
@@ -640,7 +1171,8 @@
               <div class="project-badge">Web Application</div>
               <h3>Database-Backed Food Ordering App</h3>
               <p>
-                A food ordering web platform backed by a structured relational database. Built from scratch with product menus, cart sessions, custom item modifiers, and an end-to-end checkout flow.
+                A food ordering web platform backed by a structured relational database. Built from scratch with product
+                menus, cart sessions, custom item modifiers, and an end-to-end checkout flow.
               </p>
             </div>
             <div class="tags">
@@ -658,7 +1190,8 @@
               <div class="project-badge">Desktop Application</div>
               <h3>AI-Powered Windows Client Tool</h3>
               <p>
-                A desktop application built for Windows that embeds customized AI logic directly into a client's daily workflow, automating repetitive copy-pasting and document handling.
+                A desktop application built for Windows that embeds customized AI logic directly into a client's daily
+                workflow, automating repetitive copy-pasting and document handling.
               </p>
             </div>
             <div class="tags">
@@ -684,7 +1217,8 @@
         <div class="skills-grid">
           <article class="skill-card">
             <strong>AI & LLMs</strong>
-            <span>Agentic AI · AI Agents · Generative AI · LangChain · RAG Pipelines · Prompt Engineering · Azure AI Foundry · ServiceNow AI Agent Studio</span>
+            <span>Agentic AI · AI Agents · Generative AI · LangChain · RAG Pipelines · Prompt Engineering · Azure AI
+              Foundry · ServiceNow AI Agent Studio</span>
           </article>
 
           <article class="skill-card">
@@ -699,12 +1233,14 @@
 
           <article class="skill-card">
             <strong>Enterprise Systems</strong>
-            <span>ServiceNow · ServiceNow ITSM · Incident Management · Enterprise Automation · Root-Cause Analysis</span>
+            <span>ServiceNow · ServiceNow ITSM · Incident Management · Enterprise Automation · Root-Cause
+              Analysis</span>
           </article>
 
           <article class="skill-card">
             <strong>Software Engineering</strong>
-            <span>Application Development · REST APIs · API Integration · Debugging · Testing · Deployment · Maintenance</span>
+            <span>Application Development · REST APIs · API Integration · Debugging · Testing · Deployment ·
+              Maintenance</span>
           </article>
 
           <article class="skill-card">
@@ -731,7 +1267,8 @@
               <span class="achievement-type">Hackathon Lead</span>
             </div>
             <h3>EY GDS Enterprise Hackathons</h3>
-            <p>Led a developer team through fast-paced problem scoping, technical design, and final demo delivery, driving our project to completion.</p>
+            <p>Led a developer team through fast-paced problem scoping, technical design, and final demo delivery,
+              driving our project to completion.</p>
             <div class="tags">
               <span class="tag">Team Lead</span>
               <span class="tag">Fast Prototyping</span>
@@ -745,7 +1282,8 @@
               <span class="achievement-type">National Hackathon</span>
             </div>
             <h3>Smart India Hackathon</h3>
-            <p>Competed nationally, building working software prototypes under tight deadlines to tackle practical real-world problem statements.</p>
+            <p>Competed nationally, building working software prototypes under tight deadlines to tackle practical
+              real-world problem statements.</p>
             <div class="tags">
               <span class="tag">Problem Solving</span>
               <span class="tag">Prototyping</span>
@@ -759,7 +1297,8 @@
               <span class="achievement-type">Bug Discovery</span>
             </div>
             <h3>YouTube Technical Bug Report</h3>
-            <p>Discovered a reproducible logic bug on YouTube, documented the exact steps to trigger it, and submitted a detailed writeup with a proposed fix.</p>
+            <p>Discovered a reproducible logic bug on YouTube, documented the exact steps to trigger it, and submitted a
+              detailed writeup with a proposed fix.</p>
             <div class="tags">
               <span class="tag">Debugging</span>
               <span class="tag">Root-Cause Analysis</span>
@@ -787,7 +1326,8 @@
               <span class="achievement-type">Shipped Products</span>
             </div>
             <h3>Independent Product Development</h3>
-            <p>Founded PromptImageLab.com and built multiple web, mobile, and desktop applications independently, taking them from idea to production deployment.</p>
+            <p>Founded PromptImageLab.com and built multiple web, mobile, and desktop applications independently, taking
+              them from idea to production deployment.</p>
             <div class="tags">
               <span class="tag">PromptImageLab.com</span>
               <span class="tag">Google Play Store</span>
@@ -826,7 +1366,9 @@
 
         <div class="card" style="margin-top:24px">
           <h3>Certifications</h3>
-          <p>Microsoft Certified: Azure AI Fundamentals (AI-901) · Microsoft Certified: Azure AI Apps and Agents Developer Associate (AI-103) · GitHub Copilot Certification · ServiceNow Certified System Administrator (CSA) · ServiceNow Certified Implementation Specialist — Discovery (CIS-DF)</p>
+          <p>Microsoft Certified: Azure AI Fundamentals (AI-901) · Microsoft Certified: Azure AI Apps and Agents
+            Developer Associate (AI-103) · GitHub Copilot Certification · ServiceNow Certified System Administrator
+            (CSA) · ServiceNow Certified Implementation Specialist — Discovery (CIS-DF)</p>
         </div>
       </section>
 
@@ -835,7 +1377,8 @@
         <div class="contact">
           <div>
             <h2 id="contact-title">Want to chat or work together?</h2>
-            <p>Whether you'd like to discuss enterprise AI agents, full-stack projects, or PromptImageLab.com, feel free to reach out.</p>
+            <p>Whether you'd like to discuss enterprise AI agents, full-stack projects, or PromptImageLab.com, feel free
+              to reach out.</p>
           </div>
           <div class="contact-actions">
             <a class="btn" href="mailto:dhanussh05@gmail.com">dhanussh05@gmail.com</a>
@@ -897,4 +1440,5 @@
     })();
   </script>
 </body>
+
 </html>
