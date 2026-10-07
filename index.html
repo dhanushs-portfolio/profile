@@ -1,19 +1,16 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
   <meta name="theme-color" content="#ffffff">
-  <meta name="description"
-    content="Dhanush S — Software Engineer at EY GDS & Founder of PromptImageLab.com specializing in Enterprise AI, Agentic AI, LangChain, RAG, Python, React, and ServiceNow automation.">
+  <meta name="description" content="Dhanush S — Software Engineer at EY GDS and builder of PromptImageLab.com. Working on AI agents, ServiceNow automation, LangChain, Python, and React.">
   <meta name="author" content="Dhanush S">
-  <meta property="og:title" content="Dhanush S — Software Engineer · Agentic AI & Product Developer">
-  <meta property="og:description"
-    content="Software Engineer building enterprise AI solutions, Agentic AI workflows with LangChain & RAG, full-stack web/mobile applications, and SaaS products.">
+  <meta property="og:title" content="Dhanush S — Software Engineer">
+  <meta property="og:description" content="Software Engineer at EY GDS building AI agents and enterprise incident tools, plus independent web and mobile products.">
   <meta property="og:type" content="website">
-  <title>Dhanush S — Software Engineer · Agentic AI & Product Developer</title>
+  <title>Dhanush S — Software Engineer</title>
 
   <script type="application/ld+json">
   {
@@ -29,9 +26,8 @@
       "addressCountry": "IN"
     },
     "knowsAbout": [
-      "Agentic AI", "AI Agents", "Generative AI", "LLMs", "RAG", "LangChain",
-      "Prompt Engineering", "Python", "JavaScript", "React", "Full-Stack Development",
-      "REST APIs", "ServiceNow", "Azure AI Foundry", "Enterprise Automation"
+      "Agentic AI", "AI Agents", "LangChain", "RAG", "Python", "JavaScript",
+      "React", "ServiceNow", "Azure AI Foundry", "REST APIs", "Full-Stack Development"
     ]
   }
   </script>
@@ -54,8 +50,8 @@
       --shadow-md: 0 10px 30px rgba(15, 23, 42, 0.06), 0 2px 8px rgba(15, 23, 42, 0.035);
       --shadow-lg: 0 22px 60px rgba(15, 23, 42, 0.09), 0 4px 14px rgba(15, 23, 42, 0.04);
       --shadow: 0 18px 60px rgba(15, 23, 42, 0.08);
-      --radius: 18px;
-      --max: 1180px;
+      --radius: 16px;
+      --max: 1120px;
     }
 
     @media (prefers-color-scheme: dark) {
@@ -117,14 +113,8 @@
       --shadow: 0 18px 60px rgba(0, 0, 0, 0.30);
     }
 
-    * {
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
     body {
       margin: 0;
       background: var(--bg);
@@ -135,742 +125,219 @@
       text-rendering: optimizeLegibility;
     }
 
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
+    a { color: inherit; text-decoration: none; }
+    a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+    .skip { position: absolute; left: -9999px; }
+    .skip:focus { left: 16px; top: 16px; z-index: 99; background: var(--surface); padding: 10px 14px; border-radius: 8px; }
 
-    a:focus-visible,
-    button:focus-visible {
-      outline: 3px solid var(--accent);
-      outline-offset: 3px;
-    }
-
-    .skip {
-      position: absolute;
-      left: -9999px;
-    }
-
-    .skip:focus {
-      left: 16px;
-      top: 16px;
-      z-index: 99;
-      background: var(--surface);
-      padding: 10px 14px;
-      border-radius: 8px;
-    }
-
-    .shell {
-      width: min(calc(100% - 40px), var(--max));
-      margin: auto;
-    }
-
+    .shell { width: min(calc(100% - 40px), var(--max)); margin: auto; }
     header {
-      position: sticky;
-      top: 0;
-      z-index: 50;
+      position: sticky; top: 0; z-index: 50;
       background: color-mix(in srgb, var(--bg) 88%, transparent);
       backdrop-filter: blur(18px);
       border-bottom: 1px solid color-mix(in srgb, var(--line) 80%, transparent);
-      box-shadow: 0 6px 20px rgba(15, 23, 42, 0.035);
+      box-shadow: 0 4px 16px rgba(15, 23, 42, 0.03);
     }
-
-    @media (prefers-color-scheme: dark) {
-      header {
-        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.20);
-      }
-    }
-
-    .nav {
-      min-height: 72px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 24px;
-    }
-
-    .brand {
-      font-weight: 750;
-      letter-spacing: -.02em;
-      font-size: 17px;
-    }
-
-    .brand span {
-      color: var(--muted);
-      font-weight: 500;
-      font-size: 14px;
-    }
-
-    nav {
-      display: flex;
-      gap: 22px;
-      align-items: center;
-    }
-
-    nav a {
-      font-size: 14px;
-      color: var(--muted);
-      transition: .2s ease;
-      font-weight: 500;
-    }
-
-    nav a:hover {
-      color: var(--text);
-    }
-
-    .actions {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
+    .nav { min-height: 68px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .brand { font-weight: 750; letter-spacing: -.02em; font-size: 16.5px; }
+    .brand span { color: var(--muted); font-weight: 500; font-size: 13.5px; margin-left: 6px; }
+    nav { display: flex; gap: 22px; align-items: center; }
+    nav a { font-size: 14px; color: var(--muted); transition: color .2s ease; font-weight: 500; }
+    nav a:hover { color: var(--text); }
+    .actions { display: flex; align-items: center; gap: 8px; }
     .icon-btn {
-      width: 38px;
-      height: 38px;
-      border: 1px solid var(--line);
-      background: var(--surface);
-      color: var(--text);
-      border-radius: 10px;
-      cursor: pointer;
-      display: grid;
-      place-items: center;
+      width: 38px; height: 38px; border: 1px solid var(--line); background: var(--surface);
+      color: var(--text); border-radius: 10px; cursor: pointer; display: grid; place-items: center;
       transition: .2s ease;
     }
+    .icon-btn svg { width: 17px; height: 17px; }
+    .icon-btn:hover { box-shadow: var(--shadow-sm); transform: translateY(-1px); }
 
-    .icon-btn svg {
-      width: 17px;
-      height: 17px;
-    }
-
-    .icon-btn:hover {
-      box-shadow: var(--shadow-sm);
-      transform: translateY(-1px);
-    }
-
-    main {
-      overflow: hidden;
-    }
-
-    .hero {
-      padding: 100px 0 84px;
-    }
-
+    main { overflow: hidden; }
+    .hero { padding: 90px 0 76px; }
     .eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 13px;
-      font-weight: 700;
-      color: var(--accent);
-      letter-spacing: .08em;
-      text-transform: uppercase;
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 13px; font-weight: 700; color: var(--accent);
+      letter-spacing: .08em; text-transform: uppercase;
     }
-
-    .eyebrow::before {
-      content: "";
-      width: 24px;
-      height: 1.5px;
-      background: var(--accent);
-    }
-
+    .eyebrow::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: #10b981; display: inline-block; }
     h1 {
-      max-width: 960px;
-      margin: 18px 0 20px;
-      font-size: clamp(40px, 6.2vw, 78px);
-      line-height: 1.02;
-      letter-spacing: -.055em;
+      max-width: 900px; margin: 18px 0 20px;
+      font-size: clamp(38px, 5.8vw, 68px); line-height: 1.05; letter-spacing: -.045em;
       font-weight: 800;
     }
-
     .hero p {
-      max-width: 780px;
-      margin: 0;
-      color: var(--muted);
-      font-size: clamp(17px, 1.8vw, 20px);
-      line-height: 1.6;
+      max-width: 740px; margin: 0; color: var(--muted);
+      font-size: clamp(17px, 1.8vw, 19.5px); line-height: 1.6;
     }
-
-    .hero-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 34px;
-    }
-
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
     .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 9px;
-      min-height: 46px;
-      padding: 0 18px;
-      border-radius: 11px;
-      border: 1px solid var(--line);
-      background: var(--surface);
-      font-weight: 700;
-      font-size: 14px;
-      transition: .2s ease;
+      display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+      min-height: 44px; padding: 0 18px; border-radius: 10px; border: 1px solid var(--line);
+      background: var(--surface); font-weight: 650; font-size: 14px; transition: .2s ease;
       color: var(--text);
     }
-
     .btn:hover {
       transform: translateY(-1px);
       border-color: var(--faint);
       box-shadow: var(--shadow-sm);
     }
-
     .btn.primary {
-      background: var(--text);
-      color: var(--bg);
-      border-color: var(--text);
-      box-shadow: 0 6px 16px rgba(15, 23, 42, 0.12);
+      background: var(--text); color: var(--bg); border-color: var(--text);
+      box-shadow: 0 4px 14px rgba(15, 23, 42, 0.12);
     }
-
-    @media (prefers-color-scheme: dark) {
-      .btn.primary {
-        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.28);
-      }
-    }
-
-    .btn svg {
-      width: 16px;
-      height: 16px;
-    }
+    .btn svg { width: 15px; height: 15px; }
 
     .proof {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 1px;
-      margin-top: 64px;
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      overflow: hidden;
-      background: var(--line);
-      box-shadow: var(--shadow);
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px;
+      margin-top: 56px; border: 1px solid var(--line); border-radius: var(--radius);
+      overflow: hidden; background: var(--line); box-shadow: var(--shadow-sm);
     }
+    .proof-item { background: var(--surface); padding: 20px; }
+    .proof-value { font-size: 20px; font-weight: 800; letter-spacing: -.03em; color: var(--text); }
+    .proof-label { color: var(--muted); font-size: 13px; margin-top: 3px; }
 
-    .proof-item {
-      background: var(--surface);
-      padding: 22px;
-    }
+    section { padding: 76px 0; border-top: 1px solid var(--line); }
+    .section-head { display: grid; grid-template-columns: 240px 1fr; gap: 40px; margin-bottom: 38px; }
+    .section-kicker { color: var(--accent); font-size: 12px; text-transform: uppercase; letter-spacing: .12em; font-weight: 750; }
+    .section-title { margin: 0; font-size: clamp(26px, 3.4vw, 38px); line-height: 1.12; letter-spacing: -.04em; font-weight: 750; }
+    .section-intro { margin: 10px 0 0; color: var(--muted); max-width: 680px; font-size: 15.5px; }
 
-    .proof-value {
-      font-size: 22px;
-      font-weight: 800;
-      letter-spacing: -.03em;
-      color: var(--text);
-    }
-
-    .proof-label {
-      color: var(--muted);
-      font-size: 13px;
-      margin-top: 4px;
-    }
-
-    section {
-      padding: 84px 0;
-      border-top: 1px solid var(--line);
-    }
-
-    .section-head {
-      display: grid;
-      grid-template-columns: 260px 1fr;
-      gap: 48px;
-      margin-bottom: 42px;
-    }
-
-    .section-kicker {
-      color: var(--accent);
-      font-size: 12px;
-      text-transform: uppercase;
-      letter-spacing: .12em;
-      font-weight: 750;
-    }
-
-    .section-title {
-      margin: 0;
-      font-size: clamp(28px, 3.8vw, 42px);
-      line-height: 1.08;
-      letter-spacing: -.045em;
-      font-weight: 750;
-    }
-
-    .section-intro {
-      margin: 12px 0 0;
-      color: var(--muted);
-      max-width: 720px;
-      font-size: 16px;
-    }
-
-    .grid-2 {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 18px;
-    }
-
-    .grid-3 {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
-    }
-
+    .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
     .card {
-      background: var(--surface);
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      padding: 28px;
-      box-shadow: var(--shadow-sm);
+      background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+      padding: 26px; box-shadow: var(--shadow-sm);
       transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
     }
-
     .card:hover {
       transform: translateY(-2px);
       box-shadow: var(--shadow-md);
       border-color: color-mix(in srgb, var(--line) 60%, var(--accent));
     }
-
-    .card h3 {
-      margin: 0 0 10px;
-      font-size: 19px;
-      letter-spacing: -.025em;
-    }
-
-    .card p {
-      color: var(--muted);
-      margin: 0;
-      font-size: 14.5px;
-      line-height: 1.65;
-    }
-
-    .tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 20px;
-    }
-
+    .card h3 { margin: 0 0 8px; font-size: 18px; letter-spacing: -.02em; }
+    .card p { color: var(--muted); margin: 0; font-size: 14.5px; line-height: 1.65; }
+    .tags { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 18px; }
     .tag {
-      display: inline-flex;
-      padding: 5px 9px;
-      border-radius: 7px;
-      background: var(--tag-bg);
-      border: 1px solid var(--line);
-      color: var(--muted);
-      font-size: 12px;
-      font-weight: 600;
+      display: inline-flex; padding: 4px 9px; border-radius: 6px; background: var(--tag-bg);
+      border: 1px solid var(--line); color: var(--muted); font-size: 12px; font-weight: 550;
     }
 
-    .experience {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .role {
-      display: grid;
-      grid-template-columns: 240px 1fr;
-      gap: 40px;
-      padding: 36px 0;
-    }
-
-    .role+.role {
-      border-top: 1px solid var(--line);
-    }
-
-    .role-meta {
-      color: var(--muted);
-      font-size: 14px;
-    }
-
-    .role-company {
-      color: var(--text);
-      font-weight: 750;
-      font-size: 17px;
-      margin-bottom: 2px;
-    }
-
+    .experience { display: flex; flex-direction: column; }
+    .role { display: grid; grid-template-columns: 240px 1fr; gap: 40px; padding: 32px 0; }
+    .role + .role { border-top: 1px solid var(--line); }
+    .role-meta { color: var(--muted); font-size: 14px; }
+    .role-company { color: var(--text); font-weight: 750; font-size: 17px; margin-bottom: 2px; }
     .role-badge {
-      display: inline-block;
-      font-size: 11px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: .08em;
-      color: var(--accent);
-      background: var(--accent-soft);
-      padding: 3px 8px;
-      border-radius: 6px;
-      margin-top: 6px;
-      margin-bottom: 6px;
+      display: inline-block; font-size: 11px; font-weight: 700; text-transform: uppercase;
+      letter-spacing: .06em; color: var(--accent); background: var(--accent-soft);
+      padding: 3px 8px; border-radius: 6px; margin: 6px 0;
     }
+    .role-dates { font-weight: 500; color: var(--muted); font-size: 13px; }
+    .role-loc { color: var(--faint); font-size: 13px; margin-top: 2px; }
+    .role-content h3 { margin: 0 0 10px; font-size: 20px; letter-spacing: -.025em; }
+    .role-content ul { margin: 0; padding-left: 18px; color: var(--muted); }
+    .role-content li { margin: 9px 0; font-size: 14.5px; line-height: 1.65; }
+    .role-content li::marker { color: var(--accent); }
 
-    .role-dates {
-      font-weight: 500;
-      color: var(--muted);
-      font-size: 13.5px;
-    }
-
-    .role-loc {
-      color: var(--faint);
-      font-size: 13px;
-      margin-top: 2px;
-    }
-
-    .role-content h3 {
-      margin: 0 0 12px;
-      font-size: 22px;
-      letter-spacing: -.03em;
-    }
-
-    .role-content ul {
-      margin: 0;
-      padding-left: 20px;
-      color: var(--muted);
-    }
-
-    .role-content li {
-      margin: 10px 0;
-      font-size: 14.5px;
-      line-height: 1.65;
-    }
-
-    .role-content li::marker {
-      color: var(--accent);
-    }
-
-    .projects-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
-    }
-
+    .projects-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
     .project-card {
-      background: var(--surface);
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      padding: 30px;
-      box-shadow: var(--shadow-sm);
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+      background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+      padding: 28px; box-shadow: var(--shadow-sm); display: flex; flex-direction: column; justify-content: space-between;
       transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
     }
-
     .project-card:hover {
       transform: translateY(-2px);
       box-shadow: var(--shadow-md);
       border-color: color-mix(in srgb, var(--line) 60%, var(--accent));
     }
-
     .project-badge {
-      font-size: 11px;
-      font-weight: 750;
-      text-transform: uppercase;
-      letter-spacing: .08em;
-      color: var(--accent);
-      margin-bottom: 8px;
+      font-size: 11px; font-weight: 750; text-transform: uppercase; letter-spacing: .08em;
+      color: var(--accent); margin-bottom: 8px;
     }
+    .project-card h3 { margin: 0 0 8px; font-size: 19px; letter-spacing: -.025em; }
+    .project-card p { color: var(--muted); margin: 0; font-size: 14px; line-height: 1.65; flex-grow: 1; }
 
-    .project-card h3 {
-      margin: 0 0 10px;
-      font-size: 20px;
-      letter-spacing: -.025em;
-    }
-
-    .project-card p {
-      color: var(--muted);
-      margin: 0;
-      font-size: 14.5px;
-      line-height: 1.65;
-      flex-grow: 1;
-    }
-
-    .skills-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 16px;
-    }
-
+    .skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
     .skill-card {
-      background: var(--surface);
-      border: 1px solid var(--line);
-      border-radius: 14px;
-      padding: 22px;
-      box-shadow: var(--shadow-sm);
+      background: var(--surface); border: 1px solid var(--line); border-radius: 12px;
+      padding: 20px; box-shadow: var(--shadow-sm);
       transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
     }
-
     .skill-card:hover {
       transform: translateY(-2px);
       box-shadow: var(--shadow-md);
       border-color: color-mix(in srgb, var(--line) 70%, var(--accent));
     }
+    .skill-card strong { display: block; margin-bottom: 8px; font-size: 14.5px; color: var(--text); }
+    .skill-card span { color: var(--muted); font-size: 13px; line-height: 1.65; display: block; }
 
-    .skill-card strong {
-      display: block;
-      margin-bottom: 9px;
-      font-size: 15px;
-      color: var(--text);
-    }
+    .timeline { display: grid; gap: 0; }
+    .edu-item { display: grid; grid-template-columns: 240px 1fr; gap: 40px; padding: 22px 0; border-top: 1px solid var(--line); }
+    .edu-item:first-child { border-top: 0; }
+    .edu-meta { color: var(--muted); font-size: 13.5px; }
+    .edu-item h3 { margin: 0; font-size: 17px; font-weight: 700; }
+    .edu-item p { margin: 3px 0 0; color: var(--muted); font-size: 14px; }
 
-    .skill-card span {
-      color: var(--muted);
-      font-size: 13.5px;
-      line-height: 1.7;
-      display: block;
-    }
-
-    .timeline {
-      display: grid;
-      gap: 0;
-    }
-
-    .edu-item {
-      display: grid;
-      grid-template-columns: 240px 1fr;
-      gap: 40px;
-      padding: 26px 0;
-      border-top: 1px solid var(--line);
-    }
-
-    .edu-item:first-child {
-      border-top: 0;
-    }
-
-    .edu-meta {
-      color: var(--muted);
-      font-size: 14px;
-      font-weight: 500;
-    }
-
-    .edu-item h3 {
-      margin: 0;
-      font-size: 18px;
-      font-weight: 700;
-    }
-
-    .edu-item p {
-      margin: 4px 0 0;
-      color: var(--muted);
-      font-size: 14px;
-    }
-
-    .achievement-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 16px;
-    }
-
+    .achievement-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
     .achievement {
-      background: var(--surface);
-      border: 1px solid var(--line);
-      border-radius: 16px;
-      padding: 24px;
-      box-shadow: var(--shadow-sm);
+      background: var(--surface); border: 1px solid var(--line); border-radius: 14px;
+      padding: 22px; box-shadow: var(--shadow-sm);
       transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
     }
-
     .achievement:hover {
       transform: translateY(-2px);
       box-shadow: var(--shadow-md);
       border-color: color-mix(in srgb, var(--line) 70%, var(--accent));
     }
-
     .achievement-top {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 12px;
-      margin-bottom: 12px;
+      display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-bottom: 10px;
     }
-
-    .achievement-index {
-      font-size: 11px;
-      font-weight: 800;
-      letter-spacing: .12em;
-      color: var(--faint);
-    }
-
-    .achievement-type {
-      font-size: 11px;
-      text-transform: uppercase;
-      letter-spacing: .08em;
-      font-weight: 750;
-      color: var(--accent);
-    }
-
-    .achievement h3 {
-      margin: 0 0 8px;
-      font-size: 17.5px;
-      letter-spacing: -.02em;
-    }
-
-    .achievement p {
-      margin: 0;
-      color: var(--muted);
-      font-size: 14px;
-      line-height: 1.65;
-    }
+    .achievement-index { font-size: 11px; font-weight: 800; letter-spacing: .12em; color: var(--faint); }
+    .achievement-type { font-size: 11px; text-transform: uppercase; letter-spacing: .08em; font-weight: 750; color: var(--accent); }
+    .achievement h3 { margin: 0 0 6px; font-size: 16.5px; letter-spacing: -.02em; }
+    .achievement p { margin: 0; color: var(--muted); font-size: 13.5px; line-height: 1.65; }
 
     .contact {
-      background: var(--text);
-      color: var(--bg);
-      border-radius: 24px;
-      padding: 52px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 32px;
+      background: var(--text); color: var(--bg); border-radius: 20px; padding: 46px;
+      display: flex; align-items: center; justify-content: space-between; gap: 32px;
       box-shadow: var(--shadow-lg);
     }
-
-    .contact h2 {
-      margin: 0;
-      font-size: clamp(30px, 4vw, 46px);
-      letter-spacing: -.05em;
-      line-height: 1.05;
-    }
-
-    .contact p {
-      color: color-mix(in srgb, var(--bg) 65%, transparent);
-      margin: 10px 0 0;
-      font-size: 16px;
-    }
-
-    .contact .contact-actions {
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-
-    .contact .btn {
-      background: var(--bg);
-      color: var(--text);
-      border-color: var(--bg);
-      white-space: nowrap;
-      font-weight: 700;
-    }
-
-    .contact .btn:hover {
-      background: color-mix(in srgb, var(--bg) 90%, transparent);
-    }
+    .contact h2 { margin: 0; font-size: clamp(28px, 3.8vw, 42px); letter-spacing: -.04em; line-height: 1.1; }
+    .contact p { color: color-mix(in srgb, var(--bg) 65%, transparent); margin: 8px 0 0; font-size: 15.5px; }
+    .contact-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+    .contact .btn { background: var(--bg); color: var(--text); border-color: var(--bg); white-space: nowrap; font-weight: 700; }
+    .contact .btn:hover { background: color-mix(in srgb, var(--bg) 90%, transparent); }
 
     footer {
-      padding: 32px 0 48px;
-      color: var(--faint);
-      font-size: 13.5px;
-      display: flex;
-      justify-content: space-between;
-      gap: 20px;
-      align-items: center;
+      padding: 28px 0 42px; color: var(--faint); font-size: 13px;
+      display: flex; justify-content: space-between; gap: 20px; align-items: center;
     }
-
-    .footer-links {
-      display: flex;
-      gap: 18px;
-    }
-
-    .footer-links a:hover {
-      color: var(--text);
-    }
+    .footer-links { display: flex; gap: 16px; }
+    .footer-links a:hover { color: var(--text); }
 
     @media (max-width: 860px) {
-      .shell {
-        width: min(calc(100% - 28px), var(--max));
-      }
-
-      nav {
-        display: none;
-      }
-
-      .hero {
-        padding: 76px 0 60px;
-      }
-
-      .proof {
-        grid-template-columns: repeat(2, 1fr);
-        margin-top: 48px;
-      }
-
-      section {
-        padding: 64px 0;
-      }
-
-      .section-head {
-        grid-template-columns: 1fr;
-        gap: 10px;
-        margin-bottom: 30px;
-      }
-
-      .grid-2,
-      .skills-grid,
-      .projects-grid,
-      .achievement-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .role,
-      .edu-item {
-        grid-template-columns: 1fr;
-        gap: 10px;
-      }
-
-      .contact {
-        padding: 36px 26px;
-        flex-direction: column;
-        align-items: flex-start;
-      }
+      .shell { width: min(calc(100% - 28px), var(--max)); }
+      nav { display: none; }
+      .hero { padding: 68px 0 52px; }
+      .proof { grid-template-columns: repeat(2, 1fr); margin-top: 40px; }
+      section { padding: 56px 0; }
+      .section-head { grid-template-columns: 1fr; gap: 8px; margin-bottom: 26px; }
+      .grid-2, .skills-grid, .projects-grid, .achievement-grid { grid-template-columns: 1fr; }
+      .role, .edu-item { grid-template-columns: 1fr; gap: 8px; }
+      .contact { padding: 32px 22px; flex-direction: column; align-items: flex-start; }
     }
-
     @media (max-width: 520px) {
-      .proof {
-        grid-template-columns: 1fr;
-      }
-
-      h1 {
-        font-size: 38px;
-      }
-
-      .hero-actions .btn {
-        width: 100%;
-      }
-
-      .card,
-      .project-card {
-        padding: 22px;
-      }
-
-      footer {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 14px;
-      }
+      .proof { grid-template-columns: 1fr; }
+      h1 { font-size: 34px; }
+      .hero-actions .btn { width: 100%; }
+      .card, .project-card { padding: 20px; }
+      footer { flex-direction: column; align-items: flex-start; gap: 12px; }
     }
-
     @media print {
-
-      header,
-      .hero-actions,
-      .theme-control,
-      footer {
-        display: none !important;
-      }
-
-      body,
-      section {
-        background: #fff !important;
-        color: #111 !important;
-      }
-
-      .hero {
-        padding: 30px 0;
-      }
-
-      .card,
-      .project-card,
-      .skill-card,
-      .achievement {
-        box-shadow: none;
-        break-inside: avoid;
-      }
+      header, .hero-actions, .theme-control, footer { display: none !important; }
+      body, section { background: #fff !important; color: #111 !important; }
+      .hero { padding: 20px 0; }
+      .card, .project-card, .skill-card, .achievement { box-shadow: none; break-inside: avoid; }
     }
   </style>
 </head>
@@ -880,7 +347,7 @@
 
   <header>
     <div class="shell nav">
-      <a class="brand" href="#" aria-label="Dhanush S home">Dhanush S &nbsp;<span>Software Engineer</span></a>
+      <a class="brand" href="#" aria-label="Dhanush S home">Dhanush S<span>Software Engineer</span></a>
       <nav aria-label="Primary navigation">
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
@@ -891,12 +358,10 @@
         <a href="#contact">Contact</a>
       </nav>
       <div class="actions">
-        <button class="icon-btn theme-control" id="themeToggle" type="button" aria-label="Toggle theme"
-          title="Toggle theme">
+        <button class="icon-btn theme-control" id="themeToggle" type="button" aria-label="Toggle theme" title="Toggle theme">
           <svg id="themeIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
             <circle cx="12" cy="12" r="4" />
-            <path
-              d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41m11.32-11.32 1.41-1.41" />
+            <path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41m11.32-11.32 1.41-1.41" />
           </svg>
         </button>
       </div>
@@ -908,41 +373,39 @@
 
       <!-- Hero Section -->
       <section class="hero" aria-labelledby="hero-title" style="border-top:0">
-        <div class="eyebrow">Software Engineer · Agentic AI · Product Development</div>
-        <h1 id="hero-title">Building enterprise AI solutions and software from concept to deployment.</h1>
+        <div class="eyebrow">Software Engineer · Builder</div>
+        <h1 id="hero-title">I build AI-driven enterprise tools and ship software people actually use.</h1>
         <p>
-          Software Engineer with 1+ years of professional experience at EY GDS building enterprise software,
-          AI-powered applications, and Agentic AI solutions using Python, LangChain, RAG, JavaScript, and ServiceNow.
-          Founder of PromptImageLab.com with additional experience shipping SaaS products, web applications, and mobile
-          apps.
+          I'm a software engineer at EY GDS building AI agents and automated incident intelligence workflows with ServiceNow,
+          LangChain, RAG, and Python. When I'm not writing enterprise software, I build and run PromptImageLab.com and ship full-stack web and mobile apps.
         </p>
         <div class="hero-actions">
-          <a class="btn primary" href="#experience">View experience
+          <a class="btn primary" href="#experience">See my experience
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
               <path d="M5 12h14m-6-6 6 6-6 6" />
             </svg>
           </a>
-          <a class="btn" href="#projects">Explore projects</a>
+          <a class="btn" href="#projects">View projects</a>
           <a class="btn" href="mailto:dhanussh05@gmail.com">dhanussh05@gmail.com</a>
           <a class="btn" href="tel:+917904314494">+91 7904314494</a>
         </div>
 
-        <div class="proof" aria-label="Career overview">
+        <div class="proof" aria-label="Quick summary">
           <div class="proof-item">
-            <div class="proof-value">1+ Years</div>
-            <div class="proof-label">EY GDS Software Engineer</div>
+            <div class="proof-value">EY GDS</div>
+            <div class="proof-label">Enterprise AI & ITSM</div>
           </div>
           <div class="proof-item">
-            <div class="proof-value">Agentic AI</div>
-            <div class="proof-label">LangChain · RAG · AI Foundry</div>
+            <div class="proof-value">LangChain + RAG</div>
+            <div class="proof-label">AI Agents & Incident AI</div>
           </div>
           <div class="proof-item">
-            <div class="proof-value">Founder</div>
-            <div class="proof-label">PromptImageLab.com</div>
+            <div class="proof-value">PromptImageLab</div>
+            <div class="proof-label">Founder & Developer</div>
           </div>
           <div class="proof-item">
             <div class="proof-value">Full-Stack</div>
-            <div class="proof-label">Python · React · Mobile · SaaS</div>
+            <div class="proof-label">Python · React · Mobile</div>
           </div>
         </div>
       </section>
@@ -950,42 +413,37 @@
       <!-- About Section -->
       <section id="about" aria-labelledby="about-title">
         <div class="section-head">
-          <div class="section-kicker">Profile</div>
+          <div class="section-kicker">How I Work</div>
           <div>
-            <h2 class="section-title" id="about-title">Engineering with an AI & product-driven mindset.</h2>
+            <h2 class="section-title" id="about-title">Practical engineering, clean code, no fluff.</h2>
             <p class="section-intro">
-              My work spans enterprise software engineering, Agentic AI, and independent product building.
-              I specialize in developing contextual incident intelligence solutions, autonomous AI workflows,
-              and reliable web & mobile products from concept through production deployment.
+              I like building software that solves concrete problems. At EY GDS, that means building AI agents that dig through incident history to help engineers troubleshoot faster. On my own time, I take product ideas from an empty repo all the way to production.
             </p>
           </div>
         </div>
         <div class="grid-2">
           <article class="card">
-            <h3>What I build</h3>
+            <h3>What I focus on</h3>
             <p>
-              Enterprise AI agents, incident intelligence workflows, RAG systems, user-facing SaaS platforms,
-              database-backed web applications, and production mobile applications published to app stores.
+              AI agent workflows, retrieval-augmented generation (RAG) on enterprise data, REST API integrations, responsive React interfaces, and reliable Python data utilities.
             </p>
             <div class="tags">
-              <span class="tag">Agentic AI</span>
-              <span class="tag">RAG Workflows</span>
+              <span class="tag">AI Agents</span>
+              <span class="tag">RAG Pipelines</span>
               <span class="tag">React & Full-Stack</span>
               <span class="tag">REST APIs</span>
               <span class="tag">Python Automation</span>
             </div>
           </article>
           <article class="card">
-            <h3>How I work</h3>
+            <h3>My day-to-day approach</h3>
             <p>
-              End-to-end SDLC ownership: functional requirements analysis, rapid prototyping, API integration,
-              thorough debugging and testing, root-cause troubleshooting, stakeholder collaboration, and production
-              support.
+              I keep things maintainable: understand the real requirement first, write clean code, trace down tricky edge cases with root-cause debugging, and make sure what goes live actually stays up.
             </p>
             <div class="tags">
-              <span class="tag">Root-Cause Analysis</span>
-              <span class="tag">API Integration</span>
-              <span class="tag">Testing & Debugging</span>
+              <span class="tag">Root-Cause Debugging</span>
+              <span class="tag">API Design</span>
+              <span class="tag">Testing</span>
               <span class="tag">Production Support</span>
               <span class="tag">Product Ownership</span>
             </div>
@@ -996,11 +454,10 @@
       <!-- Experience Section -->
       <section id="experience" aria-labelledby="experience-title">
         <div class="section-head">
-          <div class="section-kicker">Professional Experience</div>
+          <div class="section-kicker">Work History</div>
           <div>
-            <h2 class="section-title" id="experience-title">Enterprise engineering & product ownership.</h2>
-            <p class="section-intro">Hands-on track record building enterprise AI automation and independently shipping
-              consumer software.</p>
+            <h2 class="section-title" id="experience-title">Where I've built and shipped.</h2>
+            <p class="section-intro">Hands-on enterprise engineering alongside independent product development.</p>
           </div>
         </div>
 
@@ -1017,14 +474,10 @@
             <div class="role-content">
               <h3>Enterprise AI & ITSM Automation</h3>
               <ul>
-                <li>Developed AI-driven incident analysis and resolution workflows using Azure AI Foundry, ServiceNow AI
-                  Agent Studio, LangChain, Python, and RAG.</li>
-                <li>Integrated AI agents with ServiceNow ITSM and REST APIs to generate contextual resolution
-                  recommendations using historical incidents and enterprise knowledge bases.</li>
-                <li>Developed, tested, debugged, deployed, maintained, and enhanced software components based on
-                  functional and business requirements.</li>
-                <li>Integrated ServiceNow, REST APIs, and AI-enabled workflows and troubleshot application, workflow,
-                  and integration issues through root-cause analysis and technical problem-solving.</li>
+                <li>Build AI-driven incident analysis and resolution workflows using Azure AI Foundry, ServiceNow AI Agent Studio, LangChain, and Python.</li>
+                <li>Connect AI agents directly with ServiceNow ITSM via REST APIs to pull past incident logs and internal knowledge bases, giving support engineers contextual resolution suggestions in real time.</li>
+                <li>Write, test, debug, and maintain software components based on day-to-day operational and business requirements.</li>
+                <li>Track down tricky integration and workflow bugs between ServiceNow, external APIs, and AI agent steps through root-cause analysis and hands-on troubleshooting.</li>
               </ul>
               <div class="tags">
                 <span class="tag">Azure AI Foundry</span>
@@ -1043,28 +496,24 @@
           <article class="role">
             <div class="role-meta">
               <div class="role-company">PromptImageLab.com</div>
-              <div>Independent Product Developer</div>
-              <div class="role-badge">Founder & Creator</div>
+              <div>Founder & Developer</div>
+              <div class="role-badge">Independent Product</div>
               <div class="role-dates">2025 — Present</div>
-              <div class="role-loc">Live Product Platform</div>
+              <div class="role-loc">Live Web Platform</div>
             </div>
             <div class="role-content">
               <h3>Founder & Full-Stack AI Product Developer</h3>
               <ul>
-                <li>Founded and independently developed <strong>PromptImageLab.com</strong>, an AI-focused platform
-                  providing AI tools, learning resources, and productivity utilities.</li>
-                <li>Designed, developed, deployed, and maintained web and SaaS applications using Python, JavaScript,
-                  React, HTML, CSS, and AI integrations.</li>
-                <li>Built AI-powered utilities and user-facing products from concept through production deployment and
-                  user acquisition.</li>
+                <li>Founded and built <strong>PromptImageLab.com</strong> from scratch—a live web platform that gives creators and developers practical AI tools, tutorials, and productivity helpers.</li>
+                <li>Built the full stack myself: designed and coded the React frontend, created backend services in Python, and integrated modern generative AI APIs.</li>
+                <li>Ship continuous improvements and utilities based on direct user usage, keeping the platform fast, responsive, and easy to use.</li>
               </ul>
               <div class="tags">
-                <span class="tag">Product Architecture</span>
+                <span class="tag">PromptImageLab.com</span>
                 <span class="tag">React</span>
                 <span class="tag">Python</span>
                 <span class="tag">AI Tools</span>
                 <span class="tag">SaaS</span>
-                <span class="tag">UI/UX</span>
                 <span class="tag">Production Deployment</span>
               </div>
             </div>
@@ -1075,27 +524,23 @@
             <div class="role-meta">
               <div class="role-company">Freelance Software Developer</div>
               <div>Client & Mobile Solutions</div>
-              <div class="role-badge">Contract Engineering</div>
+              <div class="role-badge">Contract Work</div>
               <div class="role-dates">2023 — 2024</div>
               <div class="role-loc">Remote / Client Projects</div>
             </div>
             <div class="role-content">
-              <h3>Full-Stack, Mobile & AI Solutions</h3>
+              <h3>Mobile, Web & Automation Projects</h3>
               <ul>
-                <li>Developed and deployed a network-marketing mobile application using React, JavaScript, HTML, CSS,
-                  and database technologies published on <strong>Google Play Store</strong>.</li>
-                <li>Built a database-backed food-ordering web application supporting comprehensive product catalog,
-                  menu, and ordering workflows.</li>
-                <li>Developed an Amazon Product Price Intelligence application using Python web scraping, data
-                  processing, price monitoring, automated alerts, and analytics dashboards.</li>
-                <li>Developed an AI-integrated Windows desktop application for a client based on customized functional
-                  requirements.</li>
+                <li>Built and published a network-marketing mobile application on the <strong>Google Play Store</strong> using React, JavaScript, HTML, CSS, and database storage.</li>
+                <li>Developed a database-backed food-ordering web application with full product catalogs, interactive menus, cart sessions, and order management.</li>
+                <li>Created an Amazon price intelligence tool in Python that scrapes product listings, tracks price shifts, triggers automated alerts, and plots trends on a dashboard.</li>
+                <li>Built a custom Windows desktop app for a client with embedded AI functionality tailored to their specific operational needs.</li>
               </ul>
               <div class="tags">
                 <span class="tag">Google Play Store</span>
                 <span class="tag">React Native / Mobile</span>
-                <span class="tag">Python Web Scraping</span>
-                <span class="tag">Data Processing</span>
+                <span class="tag">Python Scraping</span>
+                <span class="tag">Dashboards</span>
                 <span class="tag">Windows App</span>
                 <span class="tag">SQL Databases</span>
               </div>
@@ -1107,11 +552,10 @@
       <!-- Projects Section -->
       <section id="projects" aria-labelledby="projects-title">
         <div class="section-head">
-          <div class="section-kicker">Featured Projects</div>
+          <div class="section-kicker">Things I've Built</div>
           <div>
-            <h2 class="section-title" id="projects-title">Production systems & shipped applications.</h2>
-            <p class="section-intro">Real-world solutions built for enterprise operations, SaaS platforms, and client
-              production environments.</p>
+            <h2 class="section-title" id="projects-title">Selected projects and live apps.</h2>
+            <p class="section-intro">A mix of enterprise tooling, personal products, and client applications.</p>
           </div>
         </div>
 
@@ -1120,12 +564,9 @@
           <article class="project-card">
             <div>
               <div class="project-badge">Enterprise AI & ITSM</div>
-              <h3>Enterprise AI Incident Intelligence Workflows</h3>
+              <h3>Enterprise Incident Intelligence Agent</h3>
               <p>
-                Developed end-to-end incident analysis and resolution recommendation systems at EY GDS.
-                Combines Azure AI Foundry, ServiceNow AI Agent Studio, LangChain, and RAG to retrieve historical
-                incident patterns and enterprise knowledge bases, producing contextual root-cause diagnoses and
-                automated recommendations.
+                An AI workflow built at EY GDS connecting ServiceNow ITSM with Azure AI Foundry and LangChain. When support tickets arrive, the agent runs a RAG pipeline over historical incident data and documentation to suggest likely root causes and proven fixes on the fly.
               </p>
             </div>
             <div class="tags">
@@ -1141,14 +582,10 @@
           <!-- Project 2 -->
           <article class="project-card">
             <div>
-              <div class="project-badge">SaaS & AI Platform</div>
+              <div class="project-badge">Live Platform · Founder</div>
               <h3>PromptImageLab.com</h3>
               <p>
-                Founded and built an AI-focused product platform delivering curated AI tools, practical learning
-                resources,
-                and productivity utilities. Architected the entire full-stack experience with React, Python backend
-                services,
-                and seamless generative AI integrations.
+                An independent web platform I built to give creators and developers accessible AI utilities, learning materials, and productivity tools. Built with a React frontend, Python backend, and integrated generative AI APIs.
               </p>
             </div>
             <div class="tags">
@@ -1157,28 +594,24 @@
               <span class="tag">Python</span>
               <span class="tag">Generative AI</span>
               <span class="tag">SaaS</span>
-              <span class="tag">Web App</span>
+              <span class="tag">Live Product</span>
             </div>
           </article>
 
           <!-- Project 3 -->
           <article class="project-card">
             <div>
-              <div class="project-badge">Python & Intelligence</div>
-              <h3>Amazon Product Price Intelligence Application</h3>
+              <div class="project-badge">Python & Web Scraping</div>
+              <h3>Amazon Product Price Tracker & Alerts</h3>
               <p>
-                Engineered a price intelligence solution using Python web scraping, data pipeline processing, and
-                real-time
-                trend monitoring. Features automated price tracking, custom alert mechanisms, and visual analytics
-                dashboards
-                for market intelligence.
+                A Python-based intelligence service that scrapes Amazon listings, normalizes pricing data, and tracks changes over time. Includes configurable price-drop alerts and a clean visual dashboard to spot discount trends.
               </p>
             </div>
             <div class="tags">
               <span class="tag">Python</span>
               <span class="tag">Web Scraping</span>
               <span class="tag">Data Processing</span>
-              <span class="tag">Price Monitoring</span>
+              <span class="tag">Price Alerts</span>
               <span class="tag">Dashboards</span>
             </div>
           </article>
@@ -1186,12 +619,10 @@
           <!-- Project 4 -->
           <article class="project-card">
             <div>
-              <div class="project-badge">Mobile Engineering</div>
-              <h3>Network-Marketing Mobile App (Google Play Store)</h3>
+              <div class="project-badge">Mobile · Play Store</div>
+              <h3>Network Marketing Mobile App</h3>
               <p>
-                Engineered and deployed a production mobile application using React, JavaScript, HTML, CSS, and database
-                integrations. Successfully published on the Google Play Store supporting real-time network tracking and
-                member management.
+                A full mobile app built with React and JavaScript and shipped directly to the Google Play Store. Handles team networks, member trees, commission calculations, and database-backed record keeping.
               </p>
             </div>
             <div class="tags">
@@ -1207,10 +638,9 @@
           <article class="project-card">
             <div>
               <div class="project-badge">Web Application</div>
-              <h3>Database-Backed Food-Ordering Application</h3>
+              <h3>Database-Backed Food Ordering App</h3>
               <p>
-                Engineered an interactive food-ordering web platform with structured relational database architecture,
-                supporting product listings, customizable menus, cart operations, and streamlined checkout workflows.
+                A food ordering web platform backed by a structured relational database. Built from scratch with product menus, cart sessions, custom item modifiers, and an end-to-end checkout flow.
               </p>
             </div>
             <div class="tags">
@@ -1218,26 +648,24 @@
               <span class="tag">Database Design</span>
               <span class="tag">SQL</span>
               <span class="tag">JavaScript</span>
-              <span class="tag">Workflow Automation</span>
+              <span class="tag">Web App</span>
             </div>
           </article>
 
           <!-- Project 6 -->
           <article class="project-card">
             <div>
-              <div class="project-badge">Desktop & AI</div>
-              <h3>AI-Integrated Windows Client Application</h3>
+              <div class="project-badge">Desktop Application</div>
+              <h3>AI-Powered Windows Client Tool</h3>
               <p>
-                Architected a customized desktop Windows application for client operations, integrating AI intelligence
-                capabilities directly into desktop operational workflows to enhance productivity and automate data
-                handling.
+                A desktop application built for Windows that embeds customized AI logic directly into a client's daily workflow, automating repetitive copy-pasting and document handling.
               </p>
             </div>
             <div class="tags">
               <span class="tag">Windows App</span>
               <span class="tag">AI Integration</span>
               <span class="tag">Python</span>
-              <span class="tag">Desktop Software</span>
+              <span class="tag">Desktop Tool</span>
             </div>
           </article>
         </div>
@@ -1246,46 +674,42 @@
       <!-- Skills Section -->
       <section id="skills" aria-labelledby="skills-title">
         <div class="section-head">
-          <div class="section-kicker">Technical Skills</div>
+          <div class="section-kicker">Tech Stack</div>
           <div>
-            <h2 class="section-title" id="skills-title">Core technical stack.</h2>
-            <p class="section-intro">Directly aligned with enterprise software development, Agentic AI, and full-stack
-              engineering.</p>
+            <h2 class="section-title" id="skills-title">Technologies I work with.</h2>
+            <p class="section-intro">Tools and languages I use for building enterprise workflows and shipping apps.</p>
           </div>
         </div>
 
         <div class="skills-grid">
           <article class="skill-card">
-            <strong>AI & Generative AI</strong>
-            <span>Agentic AI · AI Agents · Generative AI · LLMs · RAG · LangChain · Prompt Engineering · Azure AI
-              Foundry · ServiceNow AI Agent Studio</span>
+            <strong>AI & LLMs</strong>
+            <span>Agentic AI · AI Agents · Generative AI · LangChain · RAG Pipelines · Prompt Engineering · Azure AI Foundry · ServiceNow AI Agent Studio</span>
           </article>
 
           <article class="skill-card">
-            <strong>Programming</strong>
-            <span>Python · JavaScript · SQL · HTML · CSS · JSON</span>
+            <strong>Programming Languages</strong>
+            <span>Python · JavaScript · SQL · HTML5 · CSS3 · JSON</span>
           </article>
 
           <article class="skill-card">
             <strong>Web & Frontend</strong>
-            <span>React · JavaScript · HTML5 · CSS3 · Full-Stack Development · Responsive Web Design · UI/UX</span>
+            <span>React · JavaScript · Full-Stack Web Development · Responsive UI · REST APIs</span>
+          </article>
+
+          <article class="skill-card">
+            <strong>Enterprise Systems</strong>
+            <span>ServiceNow · ServiceNow ITSM · Incident Management · Enterprise Automation · Root-Cause Analysis</span>
           </article>
 
           <article class="skill-card">
             <strong>Software Engineering</strong>
-            <span>Application Development · REST APIs · API Integration · Debugging · Testing · Troubleshooting ·
-              Automation · Deployment · Maintenance</span>
-          </article>
-
-          <article class="skill-card">
-            <strong>Enterprise Technologies</strong>
-            <span>ServiceNow · ServiceNow ITSM · Incident Management · Enterprise Automation · Root-Cause
-              Analysis</span>
+            <span>Application Development · REST APIs · API Integration · Debugging · Testing · Deployment · Maintenance</span>
           </article>
 
           <article class="skill-card">
             <strong>Developer Tools</strong>
-            <span>Git · GitHub · GitHub Copilot · VS Code · Postman · Azure AI Foundry Studio</span>
+            <span>Git · GitHub · GitHub Copilot · VS Code · Postman</span>
           </article>
         </div>
       </section>
@@ -1293,11 +717,10 @@
       <!-- Achievements Section -->
       <section id="achievements" aria-labelledby="achievements-title">
         <div class="section-head">
-          <div class="section-kicker">Honors & Impact</div>
+          <div class="section-kicker">Highlights</div>
           <div>
-            <h2 class="section-title" id="achievements-title">Key accomplishments.</h2>
-            <p class="section-intro">Recognized performance in enterprise hackathons, technical problem-solving, and
-              product development.</p>
+            <h2 class="section-title" id="achievements-title">Things I'm proud of.</h2>
+            <p class="section-intro">Hackathon leadership, problem-solving, and projects shipped.</p>
           </div>
         </div>
 
@@ -1305,14 +728,13 @@
           <article class="achievement">
             <div class="achievement-top">
               <span class="achievement-index">01</span>
-              <span class="achievement-type">Leadership</span>
+              <span class="achievement-type">Hackathon Lead</span>
             </div>
             <h3>EY GDS Enterprise Hackathons</h3>
-            <p>Served as Team Leader, driving solution development, technical problem-solving, team coordination, and
-              successful project deliverable execution.</p>
+            <p>Led a developer team through fast-paced problem scoping, technical design, and final demo delivery, driving our project to completion.</p>
             <div class="tags">
-              <span class="tag">Team Leadership</span>
-              <span class="tag">Solution Development</span>
+              <span class="tag">Team Lead</span>
+              <span class="tag">Fast Prototyping</span>
               <span class="tag">Hackathon</span>
             </div>
           </article>
@@ -1323,58 +745,54 @@
               <span class="achievement-type">National Hackathon</span>
             </div>
             <h3>Smart India Hackathon</h3>
-            <p>Participated in software development and technology problem-solving activities to build solutions
-              addressing real-world challenge statements.</p>
+            <p>Competed nationally, building working software prototypes under tight deadlines to tackle practical real-world problem statements.</p>
             <div class="tags">
-              <span class="tag">Software Development</span>
               <span class="tag">Problem Solving</span>
-              <span class="tag">Innovation</span>
+              <span class="tag">Prototyping</span>
+              <span class="tag">Teamwork</span>
             </div>
           </article>
 
           <article class="achievement">
             <div class="achievement-top">
               <span class="achievement-index">03</span>
-              <span class="achievement-type">Investigation</span>
+              <span class="achievement-type">Bug Discovery</span>
             </div>
-            <h3>Technical Problem Solving (YouTube Bug)</h3>
-            <p>Investigated an observed technical issue on YouTube and submitted a structured report with a logic-based
-              solution, demonstrating systematic debugging skills.</p>
+            <h3>YouTube Technical Bug Report</h3>
+            <p>Discovered a reproducible logic bug on YouTube, documented the exact steps to trigger it, and submitted a detailed writeup with a proposed fix.</p>
             <div class="tags">
               <span class="tag">Debugging</span>
-              <span class="tag">Technical Analysis</span>
-              <span class="tag">Logic-Based Solving</span>
+              <span class="tag">Root-Cause Analysis</span>
+              <span class="tag">Investigation</span>
             </div>
           </article>
 
           <article class="achievement">
             <div class="achievement-top">
               <span class="achievement-index">04</span>
-              <span class="achievement-type">Research</span>
+              <span class="achievement-type">Research Paper</span>
             </div>
             <h3>Technical Paper Presentation</h3>
-            <p>Authored and presented a technical paper at an academic technology-focused conference, demonstrating
-              structured research and communication capability.</p>
+            <p>Researched, authored, and presented a technical paper at an academic technology symposium.</p>
             <div class="tags">
               <span class="tag">Research</span>
               <span class="tag">Presentation</span>
-              <span class="tag">Academic</span>
+              <span class="tag">Tech Writing</span>
             </div>
           </article>
 
           <article class="achievement" style="grid-column: 1 / -1">
             <div class="achievement-top">
               <span class="achievement-index">05</span>
-              <span class="achievement-type">Entrepreneurship</span>
+              <span class="achievement-type">Shipped Products</span>
             </div>
             <h3>Independent Product Development</h3>
-            <p>Founded and independently developed PromptImageLab.com along with multiple user-facing software
-              applications from concept through production deployment.</p>
+            <p>Founded PromptImageLab.com and built multiple web, mobile, and desktop applications independently, taking them from idea to production deployment.</p>
             <div class="tags">
               <span class="tag">PromptImageLab.com</span>
-              <span class="tag">Product Development</span>
-              <span class="tag">Full-Stack SaaS</span>
-              <span class="tag">Deployment</span>
+              <span class="tag">Google Play Store</span>
+              <span class="tag">Bootstrapping</span>
+              <span class="tag">Production Apps</span>
             </div>
           </article>
         </div>
@@ -1383,7 +801,7 @@
       <!-- Education Section -->
       <section id="education" aria-labelledby="education-title">
         <div class="section-head">
-          <div class="section-kicker">Education & Credentials</div>
+          <div class="section-kicker">Education</div>
           <div>
             <h2 class="section-title" id="education-title">Academic background.</h2>
           </div>
@@ -1391,7 +809,7 @@
 
         <div class="timeline">
           <article class="edu-item">
-            <div class="edu-meta">2025 — 2027 · Pursuing Part Time</div>
+            <div class="edu-meta">2025 — 2027 · Part Time</div>
             <div>
               <h3>Master of Computer Applications (MCA) — Artificial Intelligence & Machine Learning</h3>
               <p>Amrita Vishwa Vidyapeetham</p>
@@ -1406,11 +824,9 @@
           </article>
         </div>
 
-        <div class="card" style="margin-top:28px">
-          <h3>Professional Certifications & Credentials</h3>
-          <p>Microsoft Certified: Azure AI Fundamentals (AI-901) · Microsoft Certified: Azure AI Apps and Agents
-            Developer Associate (AI-103) · GitHub Copilot Certification · ServiceNow Certified System Administrator
-            (CSA) · ServiceNow Certified Implementation Specialist — Discovery (CIS-DF)</p>
+        <div class="card" style="margin-top:24px">
+          <h3>Certifications</h3>
+          <p>Microsoft Certified: Azure AI Fundamentals (AI-901) · Microsoft Certified: Azure AI Apps and Agents Developer Associate (AI-103) · GitHub Copilot Certification · ServiceNow Certified System Administrator (CSA) · ServiceNow Certified Implementation Specialist — Discovery (CIS-DF)</p>
         </div>
       </section>
 
@@ -1418,9 +834,8 @@
       <section id="contact" aria-labelledby="contact-title">
         <div class="contact">
           <div>
-            <h2 id="contact-title">Let’s build something impactful.</h2>
-            <p>Open to discussions regarding Software Engineering, Agentic AI, LangChain/RAG solutions, and full-stack
-              product development.</p>
+            <h2 id="contact-title">Want to chat or work together?</h2>
+            <p>Whether you'd like to discuss enterprise AI agents, full-stack projects, or PromptImageLab.com, feel free to reach out.</p>
           </div>
           <div class="contact-actions">
             <a class="btn" href="mailto:dhanussh05@gmail.com">dhanussh05@gmail.com</a>
@@ -1433,10 +848,10 @@
   </main>
 
   <footer class="shell">
-    <div>© 2026 Dhanush S. Software Engineer · Coimbatore, India</div>
+    <div>© 2026 Dhanush S · Software Engineer · Coimbatore, India</div>
     <div class="footer-links">
-      <a href="mailto:dhanussh05@gmail.com">dhanussh05@gmail.com</a>
-      <a href="tel:+917904314494">+91 7904314494</a>
+      <a href="mailto:dhanussh05@gmail.com">Email</a>
+      <a href="tel:+917904314494">Phone</a>
       <a href="#about">About</a>
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
@@ -1482,5 +897,4 @@
     })();
   </script>
 </body>
-
 </html>
